@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,5 +8,14 @@ import { IonicModule } from '@ionic/angular';
   styleUrls: ['./dashboard.page.scss'],
 })
 export class DashboardPage {
-  constructor() { }
+  constructor(private router: Router) { }
+  ngOnInit() {
+  }
+
+  agenda() {
+    {
+      console.log('io')
+      this.router.navigate(['/agenda']);
+    } 
+  }
 }
