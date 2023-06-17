@@ -7,12 +7,17 @@ const routes: Routes = [
   { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule) },
   { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardPageModule) },
   { path: 'agenda', loadChildren: () => import('./agenda/agenda.module').then(m => m.AgendaPageModule) },  {
+<<<<<<< Updated upstream
     path: 'paciente',
     loadChildren: () => import('./paciente/paciente.module').then( m => m.PacientePageModule)
   },
   {
     path: 'funcionario',
     loadChildren: () => import('./funcionario/funcionario.module').then( m => m.FuncionarioPageModule)
+=======
+    path: 'funcionario-cadastro',
+    loadChildren: () => import('./funcionario/funcionario-cadastro/funcionario-cadastro.module').then( m => m.FuncionarioCadastroPageModule)
+>>>>>>> Stashed changes
   },
 
 ];
