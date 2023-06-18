@@ -13,7 +13,7 @@
 <div class="ion-page" id="main-content">
   <ion-header>
     <ion-toolbar>
-      <img slot="start" alt="Icone do Asilo Arkhan" src="/src/assets/icon/batma-PhotoRoom.png-PhotoRoom.png" class="toolbar-icon" />
+      
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
@@ -21,14 +21,25 @@
     </ion-toolbar>
   </ion-header>
 <ion-content>
+  <ion-datetime></ion-datetime>
+
   <ion-list>
-    <ion-item *ngFor="let paciente of pacientes">
-      <ion-label>
-        <h2>{{paciente.nome}}</h2>
-        <p>Idade: {{paciente.idade}}</p>
+    
+         
+    
+    <ion-card color="tertiary" *ngFor="let paciente of pacientes">
+      <ion-card-header>
+        <ion-card-title>{{paciente.nome}}</ion-card-title>
+        <ion-card-subtitle>Idade: {{paciente.idade}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
         <p>Observações: {{paciente.observacoes}}</p>
         <p>Remédios: {{paciente.remedios}}</p>
-      </ion-label>
-    </ion-item>
+      </ion-card-content>
+    
+      <ion-button color="warning"  (click)="paciente">Informações</ion-button>
+      <ion-button color="success" >Concluido</ion-button>
+    </ion-card>
   </ion-list>
 </ion-content>
