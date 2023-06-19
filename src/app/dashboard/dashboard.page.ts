@@ -18,4 +18,10 @@ export class DashboardPage {
       this.router.navigate(['/agenda']);
     } 
   }
+  funcionario() {
+    {
+      console.log('io')
+      this.router.navigate(['/funcionario']);
+    } 
+  }
 }

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FuncionarioPageRoutingModule } from './funcionario-routing.module';
+import { ResponsavelPageRoutingModule } from './responsavel-routing.module';
 
-import { FuncionarioPage } from './funcionario.page';
+import { ResponsavelPage } from './responsavel.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FuncionarioPageRoutingModule
+    ResponsavelPageRoutingModule
   ],
-  declarations: [FuncionarioPage]
+  declarations: [ResponsavelPage]
 })
-export class FuncionarioPageModule {}
+export class ResponsavelPageModule {}
