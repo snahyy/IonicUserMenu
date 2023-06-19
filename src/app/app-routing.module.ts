@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'funcionario',
     loadChildren: () => import('./funcionario/funcionario.module').then( m => m.FuncionarioPageModule)
   },
+  {
+    path: 'responsavel',
+    loadChildren: () => import('./responsavel/responsavel.module').then( m => m.ResponsavelPageModule)
+  },
 
 ];
 
