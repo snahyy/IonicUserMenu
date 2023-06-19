@@ -11,18 +11,7 @@ const routes: Routes = [
     path: 'paciente',
     loadChildren: () => import('./paciente/paciente.module').then( m => m.PacientePageModule)
   },
-<<<<<<< Updated upstream
-  {
-    path: 'funcionario',
-    loadChildren: () => import('./funcionario/funcionario.module').then( m => m.FuncionarioPageModule)
-  },
-  {
-    path: 'responsavel',
-    loadChildren: () => import('./responsavel/responsavel.module').then( m => m.ResponsavelPageModule)
-  },
-=======
 ];
->>>>>>> Stashed changes
 
 @NgModule({
   imports: [
