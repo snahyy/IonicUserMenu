@@ -1,17 +1,13 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-import { AgendaPage } from './agenda.page';
+import { RouterModule, Routes } from '@angular/router';
+import { AgendaComponent } from './agenda/agenda.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AgendaPage
-  }
+  { path: '', component: AgendaComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AgendaPageRoutingModule {}
+export class AgendaRoutingModule { }
