@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { PacienteService } from './service/paciente.service';
+import { Component, OnInit } from '@angular/core';  
+
 
 @Component({
   selector: 'app-paciente',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paciente.page.scss'],
 })
 export class PacientePage implements OnInit {
+paciente : PacienteService[];
 
   constructor() { }
 
-  ngOnInit() {
+ async ngOnInit() {
+  this.paciente = await this.PacienteService.get();
   }
+
+  
 
 }

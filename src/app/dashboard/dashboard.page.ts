@@ -24,4 +24,10 @@ export class DashboardPage {
       this.router.navigate(['/funcionario']);
     } 
   }
+  paciente() {
+    {
+      console.log('io')
+      this.router.navigate(['/paciente']);
+    } 
+  }
 }
